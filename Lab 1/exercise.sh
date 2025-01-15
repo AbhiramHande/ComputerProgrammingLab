@@ -2,17 +2,8 @@
 # Refer to Labsheet 1 and/or Explanation.md if you didn't understand a specific step
 
 cd ~
-mkdir -p BITS/Pilani/P_Dept/CSIS
-cd BITS
-mkdir -p Hyderabad/H_Dept/Mech
-mkdir -p Goa/G_Dept/Phy
-cd Pilani/P_Dept
-mkdir ECE
-cd ~/BITS/Hyderabad/H_Dept
-mkdir IE
-cd ~/BITS/Goa/G_Dept
-mkdir Chem
-cd Phy
+mkdir -p BITS/Pilani/P_Dept/CSIS BITS/Pilani/P_Dept/ECE BITS/Hyderabad/H_Dept/Mech BITS/Hyderabad/H_Dept/IE BITS/Goa/G_Dept/Phy BITS/Goa/G_Dept/Chem
+cd ~/BITS/Goa/G_Dept/Phy
 touch f1.txt
 cd ~/BITS/Pilani/P_Dept/CSIS
 touch f1.txt
@@ -27,6 +18,6 @@ CS F241: Microprocessor Programming and Interfacing
 CS F301: Principles of Programming Languages
 CS F342: Computer Architecture
 CS F372: Operating Systems" > f2.txt
-cat f2.txt > ~/BITS/Hyderabad/H_Dept/Mech/file4.txt
+cp f2.txt ~/BITS/Hyderabad/H_Dept/Mech/file4.txt
 tail -7 ~/BITS/Hyderabad/H_Dept/Mech/file4.txt
 rm -r ~/BITS/Pilani/P_Dept/ECE
