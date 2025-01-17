@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # 1. How do you make the system print out the name of your home directory?
-echo "Home directory: $HOME"
-cd ~
+echo ~
 
 # 2. What is the parent directory of your home directory?
+cd ~
 cd ..
-echo "Parent of home directory: $(pwd)"
+pwd
 
 # 3. Make a directory called dir1 under your home directory.
 cd ~
@@ -25,10 +25,10 @@ mkdir dir1-1
 ls -R ~
 
 # 5. Remove the subdirectory dir1-1.
-rmdir dir1-1 2> ~/error.txt
+rmdir dir1-1
 
 # 6. Try now removing dir1
-rmdir ~/dir1 2>> ~/error.txt
+rmdir ~/dir1
 
 # 7. Store the list of all the files and directories (using ls long listing) in a file called dirfile.
 ls -l > dirfile
@@ -43,10 +43,10 @@ who | cut -d ' ' -f1 > userlist
 cat dirfile userlist > file1
 
 # 11. Print the number of lines, words and characters in file1 using the wc command.
-wc -l file1
+wc -lwm file1
 
 # 12. Copy the contents of file1 into file2.
-cat file1 > file2
+cp > file2
 
 # 13. Append the following two lines into file2:
 #            This is file2.
