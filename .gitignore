@@ -1,9 +1,6 @@
 # Ignore text files
 *.txt
 
-# Ignore PDF files
-*.pdf
-
 # Ignore object files and compiled binaries
 *.o
 *.out
