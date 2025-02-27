@@ -31,7 +31,7 @@ In the first case, executing `cd` without using the backslash will return an err
 ```
 
 ### Output Redirection
-The `>` is used to redirect the output to a file. You can go through the [Labsheet 2](https://app.codecrafters.io/courses/shell/overview) to understand redirection of standard output. 
+The `>` is used to redirect the output to a file. You can go through the [Labsheet 2](https://github.com/AbhiramHande/ComputerProgrammingLab/blob/main/Lab%202/Lab%20Sheet%202.pdf) to understand redirection of standard output. 
 
 ## Solution Explanation:
 
@@ -63,7 +63,7 @@ CS F301: Principles of Programming Languages
 CS F342: Computer Architecture
 CS F372: Operating Systems" > f2.txt
 ```
-The above code uses quotes to redirect 10 lines of desired input to a file `f2.txt`. The rest must be rather self explanatory and you can look up the [Labsheet](https://app.codecrafters.io/courses/shell/overview) if you are stuck.
+The above code uses quotes to redirect 10 lines of desired input to a file `f2.txt`. The rest must be rather self explanatory and you can look up the [Labsheet](https://github.com/AbhiramHande/ComputerProgrammingLab/blob/main/Lab%201/Lab%20Sheet%201.pdf) if you are stuck.
 
 **Note:** Although you can always use a relative path, it is generally better to use an absolute path. Absolute paths are more rigid and less prone to errors, especially when navigating complex directory structures. They provide the full path from the root directory, ensuring consistency regardless of the current working directory. (I am also guilty of using relative paths sometimes in the provided solution, but all I am trying to say is that using absolute path is a better practice.)
 
