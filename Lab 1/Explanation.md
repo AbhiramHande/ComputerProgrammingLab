@@ -90,7 +90,7 @@ A `.sh` file typically consists of:
 2. Commands
 3. Comments: Lines starting with `#` are comments and are not executed.
 
-A shell script can also contain variables, control-flow structures (loops and conditionals), and functions. The given solution [exercise.sh]() is a shell script used to automate the exercise in Labsheet 1. Some of the ways to run the script files are:
+A shell script can also contain variables, control-flow structures (loops and conditionals), and functions. The given solution [exercise.sh](https://github.com/AbhiramHande/ComputerProgrammingLab/blob/main/Lab%201/exercise.sh) is a shell script used to automate the exercise in Labsheet 1. Some of the ways to run the script files are:
 ```bash
 bash script.sh
 ```
