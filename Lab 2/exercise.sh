@@ -22,6 +22,8 @@ touch file1 file2 file3
 mkdir dir1-1
 
 # 4. Draw the file structure of the existent files and directories under your home directory.
+tree ~
+#If tree does not exist and you don't have root access to install it then
 ls -R ~
 
 # 5. Remove the subdirectory dir1-1.
