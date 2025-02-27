@@ -2,15 +2,26 @@
 
 The explanation to posted solution is also provided, but to better understand it, we need to first cover some additional concepts. While the labsheets cover most of the topics, the following extra information could be useful (especially for understanding the posted shell commands):
 
-### Variables
-
-### Redirection of Standard Error
-
 ### `cut` command
+The **`cut`** command in Linux is a useful tool for processing and extracting specific columns or fields from text files or standard input. It's often used to isolate particular parts of a file or output.
+
+#### Flag Options:
+
+1. **`-f` (Field)**: This option specifies which fields to extract from the input. Fields are usually separated by a delimiter (e.g., a tab or a space).
+2. **`-d` (Delimiter)**: This option defines the delimiter that separates fields. By default, `cut` assumes fields are separated by a tab character, but you can specify a different delimiter.
+3. **`-c` (Character)**: This option extracts specific characters from each line, rather than fields.
+4. **`-s` (Suppress lines without delimiter)**: If you’re using a delimiter, this option ensures that lines without the delimiter are ignored, avoiding output for those lines.
+
+#### Examples
+  - `cut -f 1` extracts the first field from each line.
+  - `cut -f 1,3` extracts the first and third fields.
+  - `cut -d ',' -f 2` will extract the second field from lines in a comma-separated file.
+  - `cut -c 1-5` extracts the first 5 characters from each line.
+  - `cut -d ',' -f 2 -s` will ignore lines that don’t contain a comma.
 
 ## Solution Explanation:
 
-As mentioned previously, the shebang (`#!/bin/bash`) at the start of  the script instructs the Linux operating system to execute the script using the Bash shell.
+As mentioned previously, the shebang (`#!/bin/bash`) at the start of the script instructs the Linux operating system to execute the script using the Bash shell.
 
 ```bash
 ls -R ~
@@ -33,4 +44,4 @@ The `who` command is used to list all the users. However along with the users, v
 
 **Note:** The information in the `who` output is typically separated by spaces or tabs. The command in the solution is configured to handle spaces, but if your output contains tabs, you might need to adjust the delimiter accordingly (use `-d $'\t'`).
 
-The rest of the exercises should be relatively straightforward, but if you encounter any issues, feel free to refer to the [Labsheet]() for further details.
+The rest of the exercises should be relatively straightforward, but if you encounter any issues, feel free to refer to the [Labsheet](https://github.com/AbhiramHande/ComputerProgrammingLab/blob/main/Lab%202/Lab%20Sheet%202.pdf) for further details.
