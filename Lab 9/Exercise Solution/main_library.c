@@ -23,7 +23,7 @@ int main()
 
     sortBookCatalogOnID();
 
-    printf("\nPrinting the Catalog soreted in ascending order of ID:\n");
+    printf("\nPrinting the Catalog soreted by ascending order of ID:\n");
     printBookCatalog();
 
     return 0;
