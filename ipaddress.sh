@@ -11,4 +11,4 @@ sudo iptables -A OUTPUT -d 172.18.4.0/25 -j ACCEPT
 sudo iptables -A OUTPUT -d 172.18.16.0/25 -j ACCEPT
 sudo iptables -A OUTPUT -d 172.18.17.0/25 -j ACCEPT
 sudo iptables -A OUTPUT -d 172.18.18.0/25 -j ACCEPT
-sudo iptables -A OUTPUT -j REJCET
+sudo iptables -A OUTPUT -j REJECT
