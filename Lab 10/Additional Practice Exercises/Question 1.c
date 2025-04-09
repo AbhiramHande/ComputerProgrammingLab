@@ -45,6 +45,7 @@ void count_string(char* string){
 
 int main(){
     char string[STRING_LENGTH];
+    printf("Enter a string: ");
     scanf("%s", string);
     count_string(string);
 }
