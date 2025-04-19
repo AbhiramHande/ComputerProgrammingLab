@@ -65,7 +65,10 @@ int main(int argc, char* argv[]){
     printf("Students sorted by Maths marks:\n");
     for(int i = 0; i < size; i++){
         student s = records[i];
-        printf("ID: %s, \tMath Marks: %d\n", s.name, s.id, s.dept, s.math_marks);
+        printf("Name: %s, \tID: %s, \tMath Marks: %d\n", s.name, s.id, s.math_marks);
     }
     printf("\n");
+
+    free(records);
+    return 0;
 }
