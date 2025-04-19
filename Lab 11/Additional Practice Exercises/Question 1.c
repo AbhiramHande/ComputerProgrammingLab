@@ -27,9 +27,12 @@ int main(int argc, char** argv){
     printf("\b\b \n");
 
     printf("Float Array (%d elements):\n", size_flt_array);
-    for(int i = 0; i < size_int_array; i++)
+    for(int i = 0; i < size_flt_array; i++)
         printf("%g, ", ((float*)new2D[1])[i]);
     printf("\b\b \n");
 
+    free(new2D[0]);
+    free(new2D[1]);
+    free(new2D);
     return 0;
 }
