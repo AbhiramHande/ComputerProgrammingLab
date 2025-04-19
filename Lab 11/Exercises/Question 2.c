@@ -16,6 +16,6 @@ int main(int argc, char*argv[]){
     printf("Please type something: ");  
     fgets(answer, sizeof(char)*ARRAY_SIZE, stdin);
     printf("You typed %s",answer); 
+    free(answer);
     return 0; 
 }
-
