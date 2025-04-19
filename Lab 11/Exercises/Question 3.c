@@ -22,4 +22,8 @@ int main(){
         dot_product += vector1[i] * vector2[i];
     
     printf("The dot products of the two vectors is %d\n", dot_product);
+
+    free(vector1);
+    free(vector2);
+    return 0;
 }
