@@ -48,7 +48,8 @@ cat dirfile userlist > file1
 wc -lwm file1
 
 # 12. Copy the contents of file1 into file2.
-cp > file2
+cp file1 file2
+# or cat file1 > file2
 
 # 13. Append the following two lines into file2:
 #            This is file2.
